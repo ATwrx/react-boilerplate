@@ -11,6 +11,11 @@
     "format": "pretty-quick",
     "lint": "eslint ./"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "author": "atwrx",
   "license": "ISC",
   "repository": {
