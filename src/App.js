@@ -11,7 +11,7 @@ class App extends React.Component {
   increment = () => {
     this.setState(state => ({ count: state.count + 1 }))
   }
-
+ 
   decrement = () => {
     this.setState(state => ({ count: state.count - 1 }))
   }
@@ -19,7 +19,7 @@ class App extends React.Component {
   render() {
     const { count } = this.state
     return (
-      <div>
+      <div role='main'>
         <h1>Hello World</h1>
         <h2 className={count >= 5 ? 'warning' : null}>Count: {count}</h2>
         <button onClick={this.increment}>+</button>
